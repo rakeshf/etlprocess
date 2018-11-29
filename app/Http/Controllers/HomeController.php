@@ -23,7 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        dd(\DB::connection('mongodb'));
         return view('home');
     }
 }
