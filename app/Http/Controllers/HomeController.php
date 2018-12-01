@@ -3,9 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
+use App\Employee;
 
 class HomeController extends Controller
 {
+    /**
+     * The layout that should be used for responses.
+     */
+    protected $layout = 'layouts.home';
     /**
      * Create a new controller instance.
      *
@@ -23,6 +29,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $employees = Employee::paginate(8);
+        return \View::make('home.index', ['employees' => $employees]);
     }
 }

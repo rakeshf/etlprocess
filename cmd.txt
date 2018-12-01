@@ -3,3 +3,6 @@ php artisan make:controller EmployeeController
 
 
 https://laracasts.com/series/intermediate-laravel/episodes/1
+
+
+npm install admin-lte@v3.0.0-alpha --save
