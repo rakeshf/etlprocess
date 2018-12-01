@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Aspiration\Etlprocess;
 
 use Jenssegers\Mongodb\Eloquent\Model;
 

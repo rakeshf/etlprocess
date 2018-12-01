@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Console\Commands;
+namespace Aspiration\Etlprocess\Console\Commands;
 
 use Illuminate\Console\Command;
-use App\Jobs\EmpDataSync;
+use Aspiration\Etlprocess\Jobs\EmpDataSync;
 
 class datasync extends Command
 {

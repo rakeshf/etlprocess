@@ -1,6 +1,7 @@
 <?php
 
-namespace App\Jobs;
+namespace Aspiration\Etlprocess\Jobs;
+
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
@@ -40,6 +41,6 @@ class EmpDataSync implements ShouldQueue
         $filename = 'empdata-' . $mytime->format('Y-m-d_H:i:s') . '.json';
         Storage::disk('local')->put($filename, $data);
         //print_r(\GuzzleHttp\json_decode($data, true));
-        echo "from jobs";
+        echo "from jobs done!!!!";
     }
 }

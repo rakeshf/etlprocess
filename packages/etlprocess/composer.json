@@ -1,0 +1,27 @@
+{
+    "name": "aspiration/etlprocess",
+    "type": "library",
+    "require": {
+        "jenssegers/mongodb": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rakesh Falke",
+            "email": "rakeshfalke@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload-dev": {
+        "psr-4": {
+            "Aspiration\\Etlprocess\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aspiration\\Etlprocess\\EtlprocessServiceProvider"
+            ]
+        }
+    }
+}
