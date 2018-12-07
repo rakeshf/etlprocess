@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Prepaire') {
       steps {
-        sh 'php -v'
+        sh 'echo $WORKSPACE'
       }
     }
   }
